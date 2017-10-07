@@ -4,6 +4,7 @@ public class Produto {
 	private String titulo;
 	private String descricao;
 	private int paginas;
+	
 	public String getTitulo() {
 		return titulo;
 	}
