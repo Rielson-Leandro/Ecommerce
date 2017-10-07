@@ -14,10 +14,11 @@ import br.com.books.loja.controllers.HomeController;
 devem ser lidos*/
 public class AppWebConfiguration {
 	
-	@Bean
+	@Bean/*indica para o Spring que o retorno desse
+método deve ser registrado como um objeto gerenciado pelo container.*/
 	public InternalResourceViewResolver internalResourceViewResolver(){
 		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
-		resolver.setPrefix("/WEB-INF/views/");
+		resolver.setPrefix("/webapp/");
 		resolver.setSuffix(".jsp");
 		return resolver;
 	}
